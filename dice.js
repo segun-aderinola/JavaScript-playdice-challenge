@@ -6,7 +6,7 @@ function random_number(){
     return randomNumber;
 }
 
-document.querySelector('#play').addEventListener('click', function(){
+document.getElementById('play').addEventListener('click', function(){
     game();
 });
 function game(){
