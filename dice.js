@@ -6,6 +6,9 @@ function random_number(){
     return randomNumber;
 }
 
+document.querySelector('#play').addEventListener('click', function(){
+    game();
+});
 function game(){
 
   // var dice_images = ['dice1.png', 'dice2.png', 'dice3.png', 'dice4.png', 'dice5.png', 'dice6.png'];
@@ -20,7 +23,7 @@ function game(){
   else if(player1_number < player2_number){
     document.querySelector('#message').textContent = "Player 2 Wins";
   }
-  else(player1_number == player2_number){
+  else{
     document.querySelector('#message').textContent = "Draw";
   }
 
